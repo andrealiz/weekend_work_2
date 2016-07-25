@@ -48,7 +48,7 @@ class Superhero
   end
 
   def hit
-    @hit = hitpoints - attack
+    @hit = hitpoints.to_i - attack.to_i
   end
 end
 
