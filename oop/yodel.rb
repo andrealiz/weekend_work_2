@@ -9,6 +9,22 @@
 # constructor accordingly.
 
 class Yodel
+  def initialize(segment, count)
+    @segment = segment
+    @count = count
+  end
+
+  def segment
+    @segment
+  end
+
+  def count
+    @count
+  end
+
+  def articulate
+    @articulate = segment * count.to_i
+  end
 
 end
 
