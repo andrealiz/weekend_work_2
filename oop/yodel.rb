@@ -9,9 +9,11 @@
 # constructor accordingly.
 
 class Yodel
-  def initialize(segment, count)
-    @segment = segment
-    @count = count
+  attr_reader :segment, :count
+
+  def initialize(yodel_hash)
+    @segment = yodel_hash[:segment]
+    @count = yodel_hash[:count]
   end
 
   def segment
