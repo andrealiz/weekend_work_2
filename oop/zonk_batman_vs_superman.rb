@@ -43,12 +43,12 @@ class Superhero
     @alive
   end
 
-  def has_special_tool
-    @has_special_tool
+  def grab_tool
+    @has_special_tool = true
   end
 
   def hit
-    @hit = hitpoints.to_i - attack.to_i
+    @hit = hitpoints - attack
   end
 end
 
