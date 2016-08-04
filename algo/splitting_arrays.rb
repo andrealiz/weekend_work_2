@@ -1,15 +1,15 @@
 # Complete the method called split_array, which two parameters, the first being an array, and the second being an integer. The method will then create an array of other arrays, each one being the size of the indicated by the second parameter. See the driver code for examples.
 
 def split_array(array, array_size)
-  @split array = array_size.to_i / array.length.to_i
-end
-
-def array
-  @array = array.to_s
-end
-
-def array_size
-  @array_size = array_size.to_i
+  outer_array = []
+  while array.any?
+    inner_array = []
+    array_size.times do
+      inner_array << array.shift
+    end
+    outer_array << inner_array
+  end
+  outer_array
 end
 
 # Driver code - don't touch anything below this line.

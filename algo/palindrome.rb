@@ -3,18 +3,10 @@
 
 
 def palindrome?(string)
-  @palindrome? = palindrome?
-  string = gets.chomp
-  if string.reverse
-    string.reverse = string
-    return true
-  else
-    false
+  string == string.reverse
 end
 
-def palindrome?
-  @palindrome
-end
+
 
 # Driver code - don't touch anything below this line.
 puts "TESTING palindrome?"
